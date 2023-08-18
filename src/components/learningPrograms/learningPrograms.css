@@ -1,9 +1,10 @@
 .learning-programs {
     width: 100%;
     height: 926px;
-    top: 907px;
+    top: 50px;
     border-radius: 60px;
-    
+    background-color: white;
+    z-index: 100;
     /* Add more styling properties as needed */
     position: relative;
   }
@@ -121,21 +122,10 @@
   }
   .card1 .explore-button{
     color: #FF752C;
+    border: 2px solid #FF752C;
   }
   .card1:hover{
     background-color: #FF752C;
-    color: white;
-  }
-
-  .card1{
-    background-color: white;
-    color: #FF752C;
-  }
-  .card1 .explore-button{
-    color: #FF752C;
-  }
-  .card1:hover{
-    background-color: rgba(255, 117, 44, 0.6);
     color: white;
   }
 
@@ -145,6 +135,7 @@
   }
   .card2 .explore-button{
     color: #4E3BC2;
+    border: 2px solid #4E3BC2;
   }
   .card2:hover{
     background-color: rgba(78, 59, 194, 0.6);
@@ -159,6 +150,7 @@
   .card3 .explore-button{
     color: 
     #2AB050;
+    border: 2px solid #2AB050;
     
   }
   .card3:hover{
@@ -174,6 +166,7 @@
   .card4 .explore-button{
     color: 
     #3B9AF5;
+    border: 2px solid #3B9AF5;
   }
   .card4:hover{
     background-color: 

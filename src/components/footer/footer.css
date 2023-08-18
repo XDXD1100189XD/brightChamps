@@ -6,7 +6,7 @@ body {
 .footer-container {
   position: relative;
   width: 1600px; /* Adjust width as needed */
-  height: 1036px; /* Adjust height as needed */
+  height: 1058px; /* Adjust height as needed */
   background: linear-gradient(115.65deg, #3D4D5D 2.35%, rgba(61, 77, 93, 0.69) 100%);
 }
 
@@ -131,7 +131,7 @@ body {
   height: 100px; /* Adjust the height as needed */
   position: absolute;
   top: 955px;
-  right: 70px;
+  right: 120px;
    /* Set your background color here */
 }
 
