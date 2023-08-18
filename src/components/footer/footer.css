@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container {
+  position: relative;
+  width: 1600px; /* Adjust width as needed */
+  height: 1036px; /* Adjust height as needed */
+  background: linear-gradient(115.65deg, #3D4D5D 2.35%, rgba(61, 77, 93, 0.69) 100%);
+}
+
+.logo {
+  position: absolute;
+  top: 100px; /* Adjust top position as needed */
+  left: 120px;
+  width: 208.162px;
+  height: 46px;
+  padding: 10px; /* Add padding as needed */
+  /* Add other styles for the logo image */
+}
+
+/* Footer.css */
+
+.footer-table {
+  position: absolute;
+  top: 100px;
+  left: 540px; /* Adjust left position as needed */
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-collapse: collapse;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-table td {
+ 
+  height: 45px;
+  padding: 0;
+  text-align: left;
+}
+
+.bold-column {
+  font-weight: 800;
+}
+
+.footer-table td {
+  color: white;
+  border: none;
+  padding: 10px;
+  background-color: transparent; /* No background color */
+}
+
+/* Rest of your existing styles for .footer-container, .logo, etc. */
+.column-width-1 {
+  width: 200px;
+}
+
+.column-width-2 {
+  width: 250px;
+}
+
+.column-width-3 {
+  width: 250px;
+}
+
+.hr-divider {
+  width: 1200.0000000000045px;
+  top: 620px;
+  left: 120px;
+  border: 1px solid #000000;
+  opacity: 0.2;
+  transform: rotate(-0deg);
+  background: #000000;
+  position: absolute;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contact-info {
+  width: 1193px;
+  height: 112px;
+  top: 660.701171875px;
+  left: 127px;
+  position: absolute;
+  opacity: 0.8;
+  padding: 20px; /* Add padding to give some spacing around the text */
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.contact-text {
+  margin-bottom: 12px;
+  color: #FFFFFF;
+  ; /* Add margin between each line of text */
+}
+
+.email-us {
+  position: absolute;
+  width: 325px;
+  height: 28px;
+  top: 900px;
+  left: 127px;
+  opacity: 0.8;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: left;
+  padding: 20px;
+  color: #FFFFFF;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+  height: 100px; /* Adjust the height as needed */
+  position: absolute;
+  top: 955px;
+  right: 70px;
+   /* Set your background color here */
+}
+
+.icon {
+  width: 40px; /* Set the width of each icon */
+  height: 40px; /* Set the height of each icon */
+  margin: 0px 40px; /* Adjust the margin as needed */
+  color: #FFFFFF; /* Set your icon background color here */
+}
+.footer-shadow {
+  position: absolute;
+  width: 327.39896179055336px;
+  height: 190.68292556175882px;
+  top: 750px;
+  right: 0px;
+  background-image: url('Vector 29.png'); /* Replace 'your-image-path.png' with the actual path to your PNG image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 55.80253219604492px 55.80253219604492px 0 0 #0000000A; /* Adjust the shadow properties as needed */
+  z-index: -1; /* Place the shadow behind other content */
+}

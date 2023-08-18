@@ -1,0 +1,49 @@
+.parents-container {
+    width: 1562.000244140625px;
+    height: 1074px;
+    background-color: 
+    #4E3BC2;
+    position: relative;
+    padding-left: 120px;
+    padding-right: 120px;
+    /* Add more styles as needed */
+  }
+  
+  .caption {
+    width: 506px;
+    height: 49px;
+    position: absolute;
+    top: 209px;
+   
+    
+  }
+  
+  .caption-text {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32.74px;
+    color: white;
+    margin: 0;
+  }
+  
+  .highlight-text {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49.1px;
+    color: white;
+    margin: 0;
+  }
+
+  .fade-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .fade-left.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
