@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/brightChamps/static/css/main.57f7628b.css",
+    "main.js": "/brightChamps/static/js/main.48074d68.js",
+    "index.html": "/brightChamps/index.html",
+    "main.57f7628b.css.map": "/brightChamps/static/css/main.57f7628b.css.map",
+    "main.48074d68.js.map": "/brightChamps/static/js/main.48074d68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57f7628b.css",
+    "static/js/main.48074d68.js"
+  ]
+}
