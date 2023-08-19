@@ -1,13 +1,14 @@
 .outer2{
   position: absolute;
-  top: 0px;
+  top: 985px;
+  
 }
 .learning-programs {
     width: 100%;
     height: 926px;
     top: 50px;
     border-radius: 60px;
-    background-color: white;
+    background-color: #3D4D5D;
     z-index: 100;
     /* Add more styling properties as needed */
     position: relative;
@@ -49,6 +50,7 @@
   position: absolute;
   top: 350px;
   left: 120px;
+ 
 }
 .card-container {
     
@@ -113,7 +115,7 @@
     font-style: Nunito;
     font-size: 14px;
     cursor: pointer;
-    ]height: 57.15px;
+    height: 57.15px;
     width: 219.07px;
     margin-top: 40px;
     transition: background-color 0.3s ease;

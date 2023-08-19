@@ -1,0 +1,214 @@
+.first-fold {
+    /* Add your styles for the "First Fold" section */
+    position: relative;
+    
+    height: 1006px;
+    background-color: #4E3BC2;
+  }
+  
+  .navbar {
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21.82px;
+    color: white;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-item {
+    padding-right: 25px;
+    height: 51px;
+    width: 175px;
+  }
+  
+  .nav-link {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .dropdown-icon {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    border: 5px solid transparent;
+    border-top-color: #333;
+  }
+  
+  .open {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown-content {
+    /* Styles for dropdown content */
+  }
+  
+  .join-us-btn {
+    /* Styles for the "Join Us" button */
+    height: 51px;
+    width: 175px;
+    margin-top: -28px;
+    border-radius: 84px;
+    background-color: white ;
+    color: blue;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21.82px;
+    z-index: 100;
+  }
+
+  .navCircle{
+    height: 370px;
+    width: 370px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(navCircle.png);
+  }
+  
+  .brightCHAMPS{
+    height: 50px;
+    width: 210px;
+    position:absolute;
+    top: 43px;
+    left: 38px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(brightCHAMPS.png);
+    z-index: 1000
+  }
+  .bigRect{
+    height: 908px;
+    width: 908px;
+    position:absolute;
+    top: -2px;
+    right: -75px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(bigRect.png);
+  }
+  .bigRect2{
+    height: 762px;
+    width: 762px;
+    position:absolute;
+    top: 71px;
+    right: 2px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(bigRect2.png);
+
+  }
+  .bigRect3{
+    height: 636px;
+    width: 636px;
+    position:absolute;
+    top: 138px;
+    right: 65px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(bigRect3.png);
+  }
+  
+
+  .childImage{
+    height: 640px;
+    width: 935px;
+    position:absolute;
+    top: 185px;
+    right: -125px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(ChildImage.png);
+  }
+  .bigText{
+    position: absolute;
+    top: 177px;
+    left: 120px;
+    height: 216px;
+    width: 564px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 72px;
+    color: white;
+  }
+  .highlighted{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 72px;
+  }
+  .descText{
+    position: absolute;
+    width: 442px;
+    height: 160px;
+    left:120px;
+    top: 425px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: white;
+  }
+  .btn1{
+    position: absolute;
+    width: 264px;
+    height: 48px;
+    top: 633px;
+    left: 120px;
+    border-radius: 24px;
+    font-weight: 800;
+    color: blue;
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 32px;
+    border: none;
+    cursor: pointer;
+  }
+  .harvard{
+    position: absolute;
+    width:146px;
+    height:75.84px;
+    top:760px;
+    left:123px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(harvard.png);
+  }
+
+  .curve{
+    position: absolute;
+    height:17.85px;
+    width:128.5px;
+    top:844.15px;
+    left:123px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(curve.png);
+  }
+  .collab{
+    position: absolute;
+    height:24px;
+    width:144px;
+    top:730px;
+    left:123px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300px;
+    color: white;
+    font-style: italic;
+  }

@@ -4,7 +4,7 @@ import './learningPrograms.css'; // Import your CSS file for styling
 const LearningPrograms = () => {
     return (
         <div className="outer2">
-            <div className="learning-programs">
+            <div className="learning-programs" style={{ backgroundColor: "#3D4D5D" }}>
                 <div className="heading-container">
                     Be Future ready with <br /><div className="highlighter">Next gen skills</div>
                 </div>

@@ -1,0 +1,48 @@
+.parents-container {
+   
+    /* Add more styles as needed */
+    position: relative;
+    
+    height: 1074px;
+    background-color: #4E3BC2;
+  }
+  
+  .content{
+    padding-top: 209px;
+    padding-bottom: 105px;
+    padding-left: 120px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32.74px;
+    color: white;
+  }
+  
+  .highlighted{
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49.1px;
+  }
+  .design1{
+    position: absolute;
+    background-image: url("design.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 262.57px;
+    height: 425px;
+    top: 10px;
+    right: 0;
+  }
+ 
+  .design2{
+    position: absolute;
+    background-image: url("Vector.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 236.57px;
+    height: 240px;
+    bottom: 10px;
+    left: -10px;
+    rotate: 
+    -70.69°;
+  }
