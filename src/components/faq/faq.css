@@ -1,0 +1,113 @@
+/* Faq.css */
+
+/* Styling for the FAQ container */
+
+  /* Faq.css */
+
+/* Styling for the FAQ container */
+.outer{
+  position: absolute;
+  top: 930px;
+  margin:0;
+  padding: 0;
+  z-index: 1000;
+  
+}
+.faq-container {
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    position: relative;
+    height: 786px;
+    border-radius: 60px;
+    color: 
+    #3D4D5D;
+    /* Add any other styling you need */
+  }
+  
+  /* Styling for the FAQ heading */
+  .faq-heading {
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65.47px;
+    padding-top: 32px;
+    width: 1400px;
+    margin-left: 120px;
+    /* Add any other styling you need */
+  }
+  .highlighter {
+    /* Add styling for the highlighter span */
+    /*background-image: url('path/to/your/image.png');
+    /* Other styles as needed */
+    display: inline-block;
+    color: #FF752C;
+    font-weight: 1000;
+    background-image: url('Vector 60.png'); /* Replace 'your-image-path.png' with the actual path to your PNG image */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+    width: 390px;
+    height: 100px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+    
+    padding-top: 6px;
+    overflow: hidden;
+    width: 1200px;
+    margin-left: 120px;
+    line-height: 36px;
+  }
+  
+  .accordion-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    cursor: pointer;
+    background-color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .accordion-question h3 {
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .arrow {
+    width: 10px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+  }
+  
+  .open {
+    transform: rotate(-135deg);
+  }
+  
+  .accordion-answer {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 16px;
+    font-weight: 400;
+    text-align: justified;
+    background-color: #ffffff;
+  }
+  .sideImage{
+    position: absolute;
+    right:0;
+    top:32px;
+    height: 93px;
+    width: 92.86px;
+    background-image: url('Communication 1.png'); /* Replace 'your-image-path.png' with the actual path to your PNG image */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+  }
