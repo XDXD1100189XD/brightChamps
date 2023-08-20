@@ -66,6 +66,7 @@
     font-size: 16px;
     line-height: 21.82px;
     z-index: 100;
+    margin-left: -15px;
   }
 
   .navCircle{

@@ -7,12 +7,14 @@ const Parents = () => {
 
     return (
         <div className="parents-container">
-            <div className="content">Thrilled BrightCHAMPS<span className="highlighted"> Parents</span> Speak Up.</div>
-            <div className="carousel">
-                <Carousel />
+            <div classname="outer4">
+                <div className="content">Thrilled BrightCHAMPS<span className="highlighted"> Parents</span> Speak Up.</div>
+                <div className="carousel">
+                    <Carousel />
+                </div>
+                <div className="design1"></div>
+                <div className="design2"></div>
             </div>
-            <div className="design1"></div>
-            <div className="design2"></div>
         </div>
     );
 };

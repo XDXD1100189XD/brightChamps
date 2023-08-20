@@ -29,7 +29,7 @@ body {
   display: flex;
   grid-gap: 1em;
   overflow: hidden;
-  width: 80%;
+  width: 79%;
   margin-right: 120px;
   margin-left: 120px;
 
@@ -105,33 +105,38 @@ body {
     margin: 0 0.125em;
     position: relative;
     user-select: none;
-    @include circle(1em);
+    width: 5em; /* Set your desired width */
+    height: 2px; /* Set your desired height */
+    background-color: #ccc; /* Set your desired background color */
 
     &.active {
+      background-color: white; /* Change background color for active button */
+      border: 1px solid #fff; /* Add a white border to make it bolder */
       &:after {
-        
         content: "";
         left: 50%;
         position: absolute;
         transform: translate(-50%, -50%);
         top: 50%;
-        @include circle(0.5em);
+         /* Adjust the height of the center marker */
+        background-color: #ccc; /* Set the same color as background */
+        border-radius: 50%; /* Make the center marker circular */
       }
     }
 
-    &.first:after {
-      content: "1";
-    }
-
-    &.second:after {
-      content: "2";
-    }
-
-    &.third:after {
-      content: "3";
+    /* Add content numbering styles as needed */
+    &:after {
+      content: attr(data-number);
+      display: block;
+      text-align: center;
+      font-size: 0.75em; /* Adjust font size as needed */
+      color: #333; /* Set the color for the numbering */
+      margin-top: 0.25em; /* Adjust vertical alignment */
     }
   }
 }
+
+
 h3{
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
@@ -167,5 +172,9 @@ h4{
   height: 94px;
   position: absolute;
   top: 22%;
-  left: 36%;
+  left: 38%;
+}
+
+.map{
+  padding-top: 15px;
 }

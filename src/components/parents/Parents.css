@@ -1,12 +1,19 @@
 .parents-container {
    
     /* Add more styles as needed */
-    position: relative;
-    
-    height: 1074px;
+    position: absolute;
+    top: 1800px;
+    height: 1150px;
     background-color: #4E3BC2;
+    width: 100vw;
   }
-  
+  .outer4{
+    
+    position: relative;
+    height: 100%;
+    width: 100vw;
+
+  }
   .content{
     padding-top: 209px;
     padding-bottom: 105px;
@@ -41,7 +48,7 @@
     background-size: contain;
     width: 236.57px;
     height: 240px;
-    bottom: 10px;
+    bottom: 90px;
     left: -10px;
     rotate: 
     -70.69°;

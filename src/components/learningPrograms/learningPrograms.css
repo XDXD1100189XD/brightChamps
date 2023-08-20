@@ -1,207 +1,210 @@
-.outer2{
+.learning-programs {
+  width: 100%;
+  height: 926px;
+  
+  border-radius: 60px;
+  background-color: white;
+  z-index: 100;
+  /* Add more styling properties as needed */
   position: absolute;
-  top: 985px;
+  top: 950px;
+}
+
+.outer2{
+  position: relative;
+  width: 100%;
+  height: 100%;
   
 }
-.learning-programs {
-    width: 100%;
-    height: 926px;
-    top: 50px;
-    border-radius: 60px;
-    background-color: #3D4D5D;
-    z-index: 100;
-    /* Add more styling properties as needed */
-    position: relative;
-  }
+
+.heading-container {
+  position: absolute;
+  width: 825px;
+  height: 112px;
+  padding: 120px;
+  color: #3D4D5D;
+  font-family: Nunito;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: left;
+  /* Add typography styling for the heading container */
   
-  .heading-container {
-    position: absolute;
-    width: 825px;
-    height: 112px;
-    padding: 120px;
-    color: #3D4D5D;
-    font-family: Nunito;
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 56px;
-    letter-spacing: 0em;
-    text-align: left;
-    /* Add typography styling for the heading container */
-    
-  }
-  
-  .highlighter {
-    /* Add styling for the highlighter span */
-    /*background-image: url('path/to/your/image.png');
-    /* Other styles as needed */
-    color: #FF752C;
-    font-weight: 1000;
-    background-image: url('Vector 60.png'); /* Replace 'your-image-path.png' with the actual path to your PNG image */
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: cover;
-    width: 390px;
-    height: 100px;
+}
+
+.highlighter {
+  /* Add styling for the highlighter span */
+  /*background-image: url('path/to/your/image.png');
+  /* Other styles as needed */
+  color: #FF752C;
+  font-weight: 1000;
+  background-image: url('Vector 60.png'); /* Replace 'your-image-path.png' with the actual path to your PNG image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
+  width: 390px;
+  height: 100px;
 }
 .card-collage{
-  display: flex;
-  justify-content: space-between; /* Distributes cards along the row */
-  gap: 70px;
-  position: absolute;
-  top: 350px;
-  left: 120px;
- 
+display: flex;
+justify-content: space-between; /* Distributes cards along the row */
+gap: 70px;
+position: absolute;
+top: 350px;
+left: 120px;
+
 }
 .card-container {
-    
-    width: 254px;
-    height: 480.65px;
-    border: 1.5875px solid;
-    position: relative;
-    border-radius: 16px;
-    transition: background-color 0.3s ease; /* For hover effect */
-  }
   
+  width: 254px;
+  height: 480.65px;
+  border: 1.5875px solid;
+  position: relative;
+  border-radius: 16px;
+  transition: background-color 0.3s ease; /* For hover effect */
+}
 
-  .top-right-background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 210px;
-    height: 172px;
-    background-image: url('Mask group.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #FFFFFF;
-  }
-  
-  .main-image {
-    display: block;
-    margin: auto;
-    margin-top: 103px;
-    width: 115px; /* Adjust width as needed */
-    height: 115px;
-  }
-  
-  .heading {
-    font-size: 28.57px;
-    font-weight: 900;
-    text-align: center;
-    line-height: 38.1px;
-    margin: auto;
-    font-family: Nunito;
-    
-    padding-top: 30px;
-  }
-  
-  .description {
-    font-size: 15.88px;
-    line-height: 25.4px;
-    text-align: center;
-    margin: auto;
-    font-family: Nunito;
-    
-    padding-top: 20px;
-  }
-  
-  .explore-button {
-    display: block;
-    margin: 0 auto;
-    padding: 15px 16px;
-    background-color: #ffffff;
-    
-    border: 2px;
-    border-radius: 38px;
-    font-style: Nunito;
-    font-size: 14px;
-    cursor: pointer;
-    height: 57.15px;
-    width: 219.07px;
-    margin-top: 40px;
-    transition: background-color 0.3s ease;
-  }
-  
 
-  .card1{
-    background-color: white;
-    color: #FF752C;
-  }
-  .card1 .explore-button{
-    color: #FF752C;
-    border: 2px solid #FF752C;
-  }
-  .card1:hover{
-    background-color: #FF752C;
-    color: white;
-  }
+.top-right-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 210px;
+  height: 172px;
+  background-image: url('Mask group.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+}
 
-  .card2{
-    background-color: white;
-    color: #4E3BC2;
-  }
-  .card2 .explore-button{
-    color: #4E3BC2;
-    border: 2px solid #4E3BC2;
-  }
-  .card2:hover{
-    background-color: rgba(78, 59, 194, 0.6);
-    color: white;
-  }
+.main-image {
+  display: block;
+  margin: auto;
+  margin-top: 103px;
+  width: 115px; /* Adjust width as needed */
+  height: 115px;
+}
 
-  .card3{
-    background-color: white;
-    color: 
-    #2AB050;
-  }
-  .card3 .explore-button{
-    color: 
-    #2AB050;
-    border: 2px solid #2AB050;
-    
-  }
-  .card3:hover{
-    background-color: 
-    rgba(42, 176, 80, 0.6);
-    color: white;
-  }
-  .card4{
-    background-color: white;
-    color: 
-    #3B9AF5;
-  }
-  .card4 .explore-button{
-    color: 
-    #3B9AF5;
-    border: 2px solid #3B9AF5;
-  }
-  .card4:hover{
-    background-color: 
-    rgba(59, 154, 245, 0.6);
-    color: white;
-  }
+.heading {
+  font-size: 28.57px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 38.1px;
+  margin: auto;
+  font-family: Nunito;
+  
+  padding-top: 30px;
+}
 
-  .main-image1{
-    background-image: url('robot (3) 1.png'); /* Replace 'your-image-path.png' with the actual path to your PNG image */
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-  }
-  .main-image2{
-    background-image: url('Group 11721.png'); /* Replace 'your-image-path.png' with the actual path to your PNG image */
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-  }
-  .main-image3{
-    background-image: url('increase 3.png'); /* Replace 'your-image-path.png' with the actual path to your PNG image */
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-  }
-  .main-image4{
-    background-image: url('translation 1.png'); /* Replace 'your-image-path.png' with the actual path to your PNG image */
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-    
-  }
+.description {
+  font-size: 15.88px;
+  line-height: 25.4px;
+  text-align: center;
+  margin: auto;
+  font-family: Nunito;
+  
+  padding-top: 20px;
+}
+
+.explore-button {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 16px;
+  background-color: #ffffff;
+  
+  border: 2px;
+  border-radius: 38px;
+  font-style: Nunito;
+  font-size: 14px;
+  cursor: pointer;
+  height: 57.15px;
+  width: 219.07px;
+  margin-top: 40px;
+  transition: background-color 0.3s ease;
+}
+
+
+.card1{
+  background-color: white;
+  color: #FF752C ;
+}
+.card1 .explore-button{
+  color: #FF752C;
+  border: 2px solid #FF752C;
+}
+.card1:hover{
+  background-color: rgba(255, 117, 44, 0.6);
+  color: white ;
+}
+
+.card2{
+  background-color: white ;
+  color: #4E3BC2;
+}
+.card2 .explore-button{
+  color: #4E3BC2;
+  border: 2px solid #4E3BC2;
+}
+.card2:hover{
+  background-color: rgba(78, 59, 194, 0.6);
+  color: white;
+}
+
+.card3{
+  background-color: white;
+  color: 
+  #2AB050;
+}
+.card3 .explore-button{
+  color: 
+  #2AB050;
+  border: 2px solid #2AB050;
+  
+}
+.card3:hover{
+  background-color: 
+  rgba(42, 176, 80, 0.6);
+  color: white;
+}
+.card4{
+  background-color: white;
+  color: 
+  #3B9AF5 ;
+}
+.card4 .explore-button{
+  color: 
+  #3B9AF5 ;
+  border: 2px solid #3B9AF5;
+}
+.card4:hover{
+  background-color: 
+  rgba(59, 154, 245, 0.6);
+  color: white;
+}
+
+.main-image1{
+  background-image: url('robot (3) 1.png'); /* Replace 'your-image-path.png' with the actual path to your PNG image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+.main-image2{
+  background-image: url('Group 11721.png'); /* Replace 'your-image-path.png' with the actual path to your PNG image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+.main-image3{
+  background-image: url('increase 3.png'); /* Replace 'your-image-path.png' with the actual path to your PNG image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+.main-image4{
+  background-image: url('translation 1.png'); /* Replace 'your-image-path.png' with the actual path to your PNG image */
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  
+}

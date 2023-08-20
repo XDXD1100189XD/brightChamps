@@ -25,10 +25,14 @@ const Faq = () => {
     <div className="outer">
       <div className="faq-container">
         <h1 className="faq-heading">Explore more of <div className="highlighter">BrightCHAMPS</div> universe</h1>
-        {/* Rest of your FAQ content */}
         <div className="accordion">
           {faqData.map((item, index) => (
-            <AccordionItem key={index} question={item.question} answer={item.answer} />
+            <AccordionItem
+              key={index}
+              question={item.question}
+              answer={item.answer}
+              isOpen={index === 0} // Open the first item by default
+            />
           ))}
         </div>
         <div className="sideImage"> </div>
@@ -37,20 +41,20 @@ const Faq = () => {
   );
 }
 
-const AccordionItem = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const AccordionItem = ({ question, answer, isOpen }) => {
+  const [openState, setOpenState] = useState(isOpen);
 
   const toggleAccordion = () => {
-    setIsOpen(!isOpen);
+    setOpenState(!openState);
   };
 
   return (
     <div className="accordion-item">
       <div className="accordion-question" onClick={toggleAccordion}>
         <h3>{question}</h3>
-        <span className={`arrow ${isOpen ? 'open' : ''}`}></span>
+        <span className={`arrow ${openState ? 'open' : ''}`}></span>
       </div>
-      {isOpen && <div className="accordion-answer">{answer}</div>}
+      {openState && <div className="accordion-answer">{answer}</div>}
     </div>
   );
 }
