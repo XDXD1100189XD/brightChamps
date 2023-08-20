@@ -1,13 +1,24 @@
 {
   "files": {
-    "main.css": "/brightChamps/static/css/main.57f7628b.css",
-    "main.js": "/brightChamps/static/js/main.48074d68.js",
+    "main.css": "/brightChamps/static/css/main.42f6b614.css",
+    "main.js": "/brightChamps/static/js/main.d9eb4d47.js",
+    "static/media/ChildImage.png": "/brightChamps/static/media/ChildImage.4d2066144bbfdd34d0a4.png",
+    "static/media/Person4.png": "/brightChamps/static/media/Person4.76cd3c77335af27388fc.png",
+    "static/media/Person5.png": "/brightChamps/static/media/Person5.040eb640a590616ceb77.png",
+    "static/media/Person2.png": "/brightChamps/static/media/Person2.895cdaec32d94c557e86.png",
+    "static/media/Person3.png": "/brightChamps/static/media/Person3.fbc5aac835e4e83572de.png",
+    "static/media/Person1.png": "/brightChamps/static/media/Person1.da63e9fe2d89ddf69a71.png",
+    "static/media/robot (3) 1.png": "/brightChamps/static/media/robot (3) 1.cc6cbb5dacbdff4400e5.png",
+    "static/media/bigRect.png": "/brightChamps/static/media/bigRect.d77909cd3c1bb3c18d4c.png",
+    "static/media/logo-color_1_.png": "/brightChamps/static/media/logo-color_1_.e537e22c77be93ab7959.png",
+    "static/media/bigRect2.png": "/brightChamps/static/media/bigRect2.91431d337efa5ea55dce.png",
+    "static/media/harvard.png": "/brightChamps/static/media/harvard.57f306853e9a1cb73f84.png",
     "index.html": "/brightChamps/index.html",
-    "main.57f7628b.css.map": "/brightChamps/static/css/main.57f7628b.css.map",
-    "main.48074d68.js.map": "/brightChamps/static/js/main.48074d68.js.map"
+    "main.42f6b614.css.map": "/brightChamps/static/css/main.42f6b614.css.map",
+    "main.d9eb4d47.js.map": "/brightChamps/static/js/main.d9eb4d47.js.map"
   },
   "entrypoints": [
-    "static/css/main.57f7628b.css",
-    "static/js/main.48074d68.js"
+    "static/css/main.42f6b614.css",
+    "static/js/main.d9eb4d47.js"
   ]
 }
