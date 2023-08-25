@@ -1,9 +1,10 @@
 @mixin circle($i) {
-  border: 1px solid white; /* Add 'solid' and specify border color */
+  border: 1px solid white;
+  /* Add 'solid' and specify border color */
   border-radius: 100%;
   height: $i;
   width: $i;
-  
+
 }
 
 $bgBlue: #001d38;
@@ -11,7 +12,7 @@ $cardBlue: #0a2640;
 $font: "Poppins";
 
 body {
-  
+
   font-family: $font, sans-serif;
 }
 
@@ -22,18 +23,18 @@ body {
   height: 600px;
   justify-content: center;
   position: relative;
-  
+
 }
 
 .wrapper {
   display: flex;
   grid-gap: 1em;
   overflow: hidden;
-  width: 79%;
+  width: 81vw;
   margin-right: 120px;
   margin-left: 120px;
 
-  & > .inner {
+  &>.inner {
     display: flex;
     grid-gap: 2.65em;
     transition: all 1s ease-in-out;
@@ -41,15 +42,16 @@ body {
 }
 
 .card {
-  border: 1px solid #ccc; /* Added border */
+  border: 1px solid #ccc;
+  /* Added border */
   border-radius: 2.37em;
   background-color: white;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   width: 365px;
-  
+
   position: relative;
 
-  & > #Image {
+  &>#Image {
     top: 0;
     left: 0;
     background-repeat: no-repeat;
@@ -58,69 +60,82 @@ body {
     height: 332px;
     cursor: pointer;
   }
-  
-  & > .Image0{
+
+  &>.Image0 {
     background-image: url("Person1.png");
   }
-  & > .Image1{
+
+  &>.Image1 {
     background-image: url("Person2.png");
   }
-  & > .Image2{
+
+  &>.Image2 {
     background-image: url("Person3.png");
   }
-  & > .Image3{
+
+  &>.Image3 {
     background-image: url("Person4.png");
   }
-  & > .Image4{
+
+  &>.Image4 {
     background-image: url("Person5.png");
   }
 
-  & > .content {
+  &>.content {
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
     padding: 1em;
     text-align: center;
     height: 174px;
-    & > h1,
-    & > h3 {
+
+    &>h1,
+    &>h3 {
       margin: 0.35em 0;
     }
 
-    & > h1 {
+    &>h1 {
       color: #fff;
       font-size: 1.25rem;
       line-height: 1;
     }
 
-    
+
   }
 }
 
 .map {
   margin-top: 1em;
 
-  & > button {
+  &>button {
     all: unset;
     cursor: pointer;
     margin: 0 0.125em;
     position: relative;
     user-select: none;
-    width: 5em; /* Set your desired width */
-    height: 2px; /* Set your desired height */
-    background-color: #ccc; /* Set your desired background color */
+    width: 5em;
+    /* Set your desired width */
+    height: 2px;
+    /* Set your desired height */
+    background-color: #ccc;
+    /* Set your desired background color */
 
     &.active {
-      background-color: white; /* Change background color for active button */
-      border: 1px solid #fff; /* Add a white border to make it bolder */
+      background-color: white;
+      /* Change background color for active button */
+      border: 1px solid #fff;
+
+      /* Add a white border to make it bolder */
       &:after {
         content: "";
         left: 50%;
         position: absolute;
         transform: translate(-50%, -50%);
         top: 50%;
-         /* Adjust the height of the center marker */
-        background-color: #ccc; /* Set the same color as background */
-        border-radius: 50%; /* Make the center marker circular */
+        /* Adjust the height of the center marker */
+        background-color: #ccc;
+        /* Set the same color as background */
+        border-radius: 50%;
+        /* Make the center marker circular */
       }
     }
 
@@ -129,15 +144,18 @@ body {
       content: attr(data-number);
       display: block;
       text-align: center;
-      font-size: 0.75em; /* Adjust font size as needed */
-      color: #333; /* Set the color for the numbering */
-      margin-top: 0.25em; /* Adjust vertical alignment */
+      font-size: 0.75em;
+      /* Adjust font size as needed */
+      color: #333;
+      /* Set the color for the numbering */
+      margin-top: 0.25em;
+      /* Adjust vertical alignment */
     }
   }
 }
 
 
-h3{
+h3 {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -145,7 +163,8 @@ h3{
   color: #3D4D5D;
 
 }
-h2{
+
+h2 {
   font-family: 'Nunito', sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -154,7 +173,8 @@ h2{
   ;
 
 }
-h4{
+
+h4 {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -164,7 +184,7 @@ h4{
 
 }
 
-.secImage{
+.secImage {
   background-image: url("playbutton.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -175,6 +195,102 @@ h4{
   left: 38%;
 }
 
-.map{
+.map {
   padding-top: 15px;
+}
+
+@media screen and (min-width: 650px) and (max-width: 1250px) {
+  /* Adjust styles for tablet devices */
+
+  .wrapper {
+    margin-left: 60px;
+  }
+
+  .card {
+    width: 337.81px;
+    height: 465px;
+  }
+
+  #image {
+    width:37vw
+  }
+
+  .content {
+    position: relative;
+  }
+
+  h3 {
+    width: 319.55px;
+    position: absolute;
+    left: 16px;
+    top: 0px;
+    text-align: start;
+
+  }
+
+  h2 {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    font-size: 18.79px;
+    text-align: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+
+  h4 {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    width: 72vw;
+    height: 490px;
+  }
+  #image {
+    width: 100%;
+    height: 301px;
+  }
+  .content {
+    position: relative;
+  }
+  h3 {
+    width: 63vw;
+    position: absolute;
+    left: 2px;
+    top: -50px;
+    text-align: start;
+    
+  }
+
+  h2 {
+    position: absolute;
+
+    top: 35px;
+    left: 0;
+    width: 63vw;
+    font-size: 18.79px;
+    text-align: start;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+
+  h4 {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 63vw;
+    text-align: start;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+
 }

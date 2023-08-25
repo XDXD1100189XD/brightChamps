@@ -9,11 +9,11 @@ function App() {
   return (
     <div className="App">
     
-      <FirstFold />
-      <LearningPrograms />
-      <Parents />
-      <Faq />
-      <Footer />
+     <FirstFold />
+     <LearningPrograms />
+     <Parents />
+     <Faq />
+     <Footer />
     </div>
   );
 }

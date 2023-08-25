@@ -51,11 +51,11 @@ const AccordionItem = ({ question, answer, isOpen }) => {
   return (
     <div className="accordion-item">
       <div className="accordion-question" onClick={toggleAccordion}>
-        <h3>{question}</h3>
-        <span className={`arrow ${openState ? 'open' : ''}`}></span>
+        <div className="h3q">{question}</div>
+        <span className={`arrow ${openState ? 'open2' : ''}`}></span>
       </div>
       {openState && <div className="accordion-answer">{answer}</div>}
     </div>
   );
-}
+};
 export default Faq;

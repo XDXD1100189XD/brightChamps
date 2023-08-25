@@ -3,9 +3,76 @@
     position: relative;
     
     height: 1006px;
+    width: 100vw;
     background-color: #4E3BC2;
   }
+
+  .mobile-nav-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+  }
   
+  .mobile-icon {
+    font-size: 28px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 42px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .mobile-navbar {
+    position: fixed;
+    top: 0;
+    right: -480px; /* Start off-screen */
+    width: 480px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    
+    box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .mobile-navbar.open3 {
+    right: 0;
+  }
+  
+  .mobile-nav-list {
+    padding: 20px;
+    list-style: none;
+  }
+  
+  .mobile-nav-item {
+    margin-bottom: 15px;
+  }
+  
+  .mobile-nav-item a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    display: block;
+  }
+  
+  .join-us-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4E3BC2;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
   .navbar {
     padding-top: 40px;
     position: absolute;
@@ -212,4 +279,232 @@
     font-weight: 300px;
     color: white;
     font-style: italic;
+  }
+
+  @media screen and (min-width: 650px) and (max-width: 1250px){
+      .first-fold{
+        height: 705px;
+      }
+      .brightCHAMPS{
+        height: 30px;
+        width: 142px;
+       
+        top: 76px;
+        left: 32px;
+        
+      }
+      .navbar {
+        padding-top: 79px;
+        
+        top: 0;
+        right: 0;
+        
+        font-size: 14px;
+        line-height: 19.1px;
+      
+      }
+      .nav-item {
+        padding-right: 16px;
+        height: 20px;
+        width: 110px;
+      }
+      .dropdown-icon {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 0px;
+        border: 5px solid transparent;
+        border-top-color: white;
+      }
+
+      .join-us-btn {
+        /* Styles for the "Join Us" button */
+        display: none;
+      }
+      .nav-list{
+        margin-right: -128px;
+      }
+      .navCircle{
+        display: none;
+      }
+      .bigRect{
+        display: none;
+      }
+      .bigRect2{
+        height: 425px;
+        width: 425px;
+        right: 32px;
+        top:115px;
+      }
+      .bigRect3{
+        top: 145px;
+        height: 363px;
+        width: 363px;
+        right: 63px;
+      }
+      .childImage{
+        top: 210px;
+        height: 250px;
+        width: 360px;
+        right: 52px;
+      }
+      .bigText{
+        width: 343px;
+        height: 120px;
+        font-size: 32px;
+        line-height: 40px;
+        left: 57px;
+      }
+      .highlighted{
+        font-size:32px;
+        line-height: 40px;
+
+      }
+      .descText{
+        
+        width: 300px;
+        height: 90px;
+        left:57px;
+        top: 320px;
+       
+        font-size: 14px;
+        line-height: 22px;
+        color: white;
+      }
+
+      .btn1{
+        width: 335px;
+        height: 48px;
+        top: 500px;
+        left: 56px;
+        
+        color: blue;
+        background-color: white;
+        
+      }
+      .harvard{
+        display: none;
+      }
+      .collab{
+        display: none;
+      }
+      
+      .curve{
+        display: none;
+      }
+
+  }
+
+  @media screen and (max-width: 650px){
+    .first-fold{
+      height: 900px;
+    }
+    .brightCHAMPS{
+      height: 22px;
+      width: 104px;
+     
+      top: 24px;
+      left: 16px;
+      
+    }
+    .navbar{
+      display: none;
+      
+    }
+    .mobile-nav-icon{
+      display: block;
+      width: 32px;
+      height: 22px;
+      color: white;
+      top: 24px;
+      right: 5vw;
+    }
+    
+
+    .join-us-btn {
+      /* Styles for the "Join Us" button */
+      display: none;
+    }
+    .nav-list{
+      margin-right: -17vw;
+    }
+    .navCircle{
+      display: none;
+    }
+    .bigRect{
+      display: none;
+    }
+    .bigRect2{
+      height: 425px;
+      width: 425px;
+      right: 32px;
+      top:290px;
+    }
+    .bigRect3{
+      top: 321px;
+      height: 363px;
+      width: 363px;
+      right: 63px;
+    }
+    .childImage{
+      top: 375px;
+      height: 250px;
+      width: 360px;
+      right: 52px;
+    }
+    .bigText{
+      width: 343px;
+      height: 120px;
+      font-size: 32px;
+      line-height: 40px;
+      left: 20px;
+      top:88px;
+    }
+    .highlighted{
+      font-size:32px;
+      line-height: 40px;
+
+    }
+    .descText{
+      
+      width: 299px;
+      height: 88px;
+      left:20px;
+      top: 220px;
+     
+      font-size: 14px;
+      line-height: 22px;
+      color: white;
+    }
+
+    .btn1{
+     
+      top: 150vw;
+      left: 24px;
+      
+      color: blue;
+      background-color: white;
+      
+    }
+    .harvard{
+      display: none;
+    }
+    .collab{
+      display: none;
+    }
+    
+    .curve{
+      display: none;
+    }
+    .mobile-nav-list {
+      padding: 20px;
+      padding-top: 64px;
+      list-style: none;
+      
+    }
+    .mobile-nav-item a{
+      font-size: 24px;
+      font-weight: 600;
+    }
+    
   }

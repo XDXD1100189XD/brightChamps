@@ -8,16 +8,49 @@ const FirstFold = () => {
     whoWeAre: false,
     english: false,
   });
-
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const toggleDropdown = (dropdownName) => {
     setDropdownStates((prevState) => ({
       ...prevState,
       [dropdownName]: !prevState[dropdownName],
     }));
   };
-
+  const toggleMobileNav = () => {
+    setMobileNavOpen(!mobileNavOpen);
+  };
   return (
     <div className="first-fold">
+      {!mobileNavOpen && (
+        <div className="mobile-nav-icon" onClick={toggleMobileNav}>
+          <span className="mobile-icon">&#9776;</span>
+        </div>
+      )}
+
+      {/* Close button */}
+      {mobileNavOpen && (
+        <div className="close-btn" onClick={toggleMobileNav}>
+          &times;
+        </div>
+      )}
+
+      {/* Mobile Navbar */}
+      <nav className={`mobile-navbar ${mobileNavOpen ? 'open3' : ''}`}>
+        <ul className="mobile-nav-list">
+          <li className="mobile-nav-item">
+            <a href="#">Our Centers</a>
+          </li>
+          <li className="mobile-nav-item">
+            <a href="#">Our Programs</a>
+          </li>
+          <li className="mobile-nav-item">
+            <a href="#">Who We Are</a>
+          </li>
+          <li className="mobile-nav-item">
+            <a href="#">English</a>
+          </li>
+        </ul>
+        
+      </nav>
       <nav className="navbar">
         <ul className="nav-list">
           <li className="nav-item dropdown">

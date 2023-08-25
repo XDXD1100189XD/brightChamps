@@ -8,7 +8,7 @@ const Parents = () => {
     return (
         <div className="parents-container">
             <div classname="outer4">
-                <div className="content">Thrilled BrightCHAMPS<span className="highlighted"> Parents</span> Speak Up.</div>
+                <div className="content">Thrilled BrightCHAMPS<span className="highlighted5"> Parents</span> Speak Up.</div>
                 <div className="carousel">
                     <Carousel />
                 </div>

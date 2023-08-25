@@ -8,7 +8,7 @@ body {
 }
 .footer-container {
   position: relative;
-  width: 1600px; /* Adjust width as needed */
+  width: 100vw; /* Adjust width as needed */
   height: 1058px; /* Adjust height as needed */
   background: linear-gradient(115.65deg, #3D4D5D 2.35%, rgba(61, 77, 93, 0.69) 100%);
 }
@@ -153,7 +153,9 @@ body {
   padding: 20px;
   color: #FFFFFF;
 }
-
+.newC{
+  top: 970px;
+}
 .social-icons {
   display: flex;
   align-items: center;
@@ -183,4 +185,211 @@ body {
   background-size: cover;
   box-shadow: 55.80253219604492px 55.80253219604492px 0 0 #0000000A; /* Adjust the shadow properties as needed */
   z-index: -1; /* Place the shadow behind other content */
+}
+
+@media screen and (min-width: 650px) and (max-width: 1250px) {
+  /* Adjust styles for tablet devices */
+  
+  .outer3 {
+    top: 2700px;
+  }
+
+  .footer-container {
+    
+    width: 100vw; /* Adjust width as needed */
+    height: 1050px; /* Adjust height as needed */
+    
+  }
+
+  .logo {
+    
+    top: 118px; /* Adjust top position as needed */
+    left: 60px;
+    width: 208.16px;
+    height: 46px;
+     /* Add padding as needed */
+    /* Add other styles for the logo image */
+  }
+  
+  .footer-table {
+    
+    top: 220px;
+    left: 63px; /* Adjust left position as needed */
+    
+    font-size: 16px;
+    line-height: 21.82px;
+  }
+  /* Adjust other styles as needed for tablets */
+
+  .column-width-1 {
+    width: 300px;
+  }
+  
+  .column-width-2 {
+    width: 280px;
+  }
+  
+  .column-width-3 {
+    width: 280px;
+  }
+
+  .hr-divider {
+    /* Adjust properties as needed for tablets */
+    width: 85vw;
+    top: 700px;
+    left: 60px;
+    border: 1px solid #000000;
+    opacity: 0.2;
+    transform: rotate(-0deg);
+    background: #000000;
+    position: absolute;
+  }
+
+  .contact-info {
+    width: 80vw;
+    height: 112px;
+    top: 730px;
+    left: 60px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0;
+    
+  }
+
+  .email-us {
+    
+    width: 253px;
+    height: 20px;
+    top: 930px;
+    left: 60px;
+    
+    font-size: 14px;
+    
+    line-height: 20px;
+  }
+  .newC{
+    top: 970px;
+  }
+  .icon {
+    width: 31px; /* Set the width of each icon */
+    height: 31px; /* Set the height of each icon */
+  }
+
+  .social-icons {
+    
+    height: 100px; /* Adjust the height as needed */
+    top: 948px;
+    right: 10px;
+     /* Set your background color here */
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* Adjust styles for smaller mobile devices */
+  .outer3 {
+    top: 3030px;
+  }
+
+  .footer-container {
+    
+    width: 100vw; /* Adjust width as needed */
+    height: 1300px /* Adjust height as needed */
+    
+  }
+
+  .logo {
+    
+    top: 130px; /* Adjust top position as needed */
+    left: 24px;
+    width: 220px;
+    height: 37.79pxpx;
+     /* Add padding as needed */
+    /* Add other styles for the logo image */
+  }
+  
+  .footer-table {
+    
+    top: 220px;
+    left: 24px; /* Adjust left position as needed */
+    
+    font-size: 16px;
+    line-height: 21.82px;
+  }
+  /* Adjust other styles as needed for tablets */
+
+  .column-width-1 {
+    width: 380px;
+  }
+  
+  .column-width-2 {
+    width: 280px;
+  }
+  
+  .column-width-3 {
+    width: 280px;
+    display: none;
+  }
+
+  .hr-divider {
+    /* Adjust properties as needed for tablets */
+    width: 85vw;
+    top: 700px;
+    left: 24px;
+    border: 1px solid #000000;
+    opacity: 0.2;
+    transform: rotate(-0deg);
+    background: #000000;
+    position: absolute;
+  }
+
+  .contact-info {
+    width: 80vw;
+    height: 305px;
+    top: 730px;
+    left: 24px;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0;
+    
+  }
+
+  .email-us {
+    
+    width: 253px;
+    height: 20px;
+    top: 1050px;
+    left: 24px;
+    
+    font-size: 14px;
+    
+    line-height: 28px;
+  }
+  .newC{
+    top: 1080px
+  }
+  .icon {
+    width: 24px; /* Set the width of each icon */
+    height: 24px; /* Set the height of each icon */
+    
+  }
+
+  .social-icons {
+    
+    height: 100px; /* Adjust the height as needed */
+    top: 1150px;
+    right: 80px;
+    
+    align-items: center;
+    justify-content: flex-start;
+    
+     /* Set your background color here */
+  }
+  .footer-shadow {
+    position: absolute;
+    width: 139px;
+    height: 75px;
+    top: 1150px;
+    right: 80px;
+    
+  }
 }

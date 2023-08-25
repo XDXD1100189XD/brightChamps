@@ -109,7 +109,7 @@ const Footer = () => {
         <div className="email-us">
           Email us at support@brightchamps.com
         </div>
-        <div className="email-us" style={{ top: '970px' }}>
+        <div className="email-us newC" >
           © Copyright 2022 BrightCHAMPS
         </div>
         <div className="social-icons">

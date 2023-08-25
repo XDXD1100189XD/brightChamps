@@ -14,7 +14,7 @@
   
 }
 .faq-container {
-    width: 100%;
+    width: 99.2vw;
     background-color: white;
     z-index: 1000;
     position: relative;
@@ -84,12 +84,12 @@
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
-    transform: rotate(45deg);
-    transition: transform 0.3s;
+    transform: rotate(45deg); /* Initial rotation is 0 degrees */
   }
   
-  .open {
-    transform: rotate(-135deg);
+  
+  .open2 {
+    transform: rotate(225deg); /* Rotation of 180 degrees */
   }
   
   .accordion-answer {
@@ -111,3 +111,118 @@
     background-size: contain;
     background-size: cover;
   }
+
+  @media screen and (min-width: 650px) and (max-width: 1250px) {
+    /* Adjust styles for tablet devices */
+    .outer{
+      top:2030px
+    }
+    .faq-container {
+      
+      height: 700px;
+      
+      
+      /* Add any other styling you need */
+    }
+    .faq-heading {
+      
+     
+      font-size: 32px;
+      line-height: 40px;
+      padding-top: 52px;
+      width: 450px;
+      margin-left: 64px;
+      /* Add any other styling you need */
+    }
+    .highlighter {
+      /* Add styling for the highlighter span */
+      /*background-image: url('path/to/your/image.png');
+      /* Other styles as needed */
+      
+      width: 280px;
+      height: 70px;
+  }
+  .accordion-item {
+    
+    
+    padding-top: 6px;
+    overflow: hidden;
+    width: 85vw;
+    margin-left: 60px;
+    line-height: 22px;
+  }
+  
+  .accordion-question {
+    
+    font-size: 16px;
+  }
+  .accordion-answer {
+    font-size: 12px;
+    line-height: 20px;
+    
+  }
+  }
+  
+  @media screen and (max-width: 650px) {
+    /* Adjust styles for smaller mobile devices */
+    .outer{
+      top:2270px;
+    }
+    .faq-container {
+      
+      height: 800px;
+      
+      
+      /* Add any other styling you need */
+    }
+    .faq-heading {
+      
+     
+      font-size: 32px;
+      line-height: 40px;
+      padding-top: 52px;
+      width: 280px;
+      margin-left: 24px;
+      /* Add any other styling you need */
+    }
+    .highlighter {
+      /* Add styling for the highlighter span */
+      /*background-image: url('path/to/your/image.png');
+      /* Other styles as needed */
+      
+      width: 260px;
+      height: 63px;
+  }
+  .accordion-item {
+    
+    
+    padding-top: 6px;
+    overflow: hidden;
+    width: 85vw;
+    margin-left: 24px;
+    line-height: 22px;
+  }
+  
+  .accordion-question {
+    width: 67vw;
+    font-size: 16px;
+  }
+  .accordion-answer {
+    font-size: 12px;
+    line-height: 20px;
+    
+  }
+  .arrow{
+    height: 6px;
+    width: 6px;
+    margin-right: -40px;
+  }
+  .sideImage{
+    top: 48px;
+    height: 73px;
+    width: 72.86px;
+   
+  }
+  }
+
+  

@@ -7,7 +7,7 @@ const LearningPrograms = () => {
         <div className="learning-programs" >
             <div className="outer2">
                 <div className="heading-container">
-                    Be Future ready with <br /><div className="highlighter">Next gen skills</div>
+                    Be Future ready with <br /><div className="highlighter2">Next gen skills</div>
                 </div>
                 {/* Content of the Learning Programs component */}
                 <div className="card-collage">
