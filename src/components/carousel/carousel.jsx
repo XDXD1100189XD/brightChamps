@@ -14,7 +14,7 @@ const Carousel = () => {
             image: "Mask Group (3).png",
             heading: "Custom Website",
             description: "BrightCHAMPS' global competitions improved my son's coding skills and communication abilities.",
-            name: "Father of Muhtasim Noor Al ..",
+            name: "Father of Muhtasim Noor",
             class: "Class 3rd | Bangladesh"
         },
         {
