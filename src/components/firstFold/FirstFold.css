@@ -437,20 +437,20 @@
     .bigRect2{
       height: 425px;
       width: 425px;
-      right: 32px;
+      right: 0px;
       top:290px;
     }
     .bigRect3{
       top: 321px;
       height: 363px;
       width: 363px;
-      right: 63px;
+      right: 26px;
     }
     .childImage{
-      top: 375px;
+      top: 385px;
       height: 250px;
       width: 360px;
-      right: 52px;
+      right: 14px;
     }
     .bigText{
       width: 343px;
@@ -479,7 +479,7 @@
 
     .btn1{
      
-      top: 150vw;
+      top: 720px;
       left: 24px;
       
       color: blue;
