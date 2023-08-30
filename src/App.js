@@ -3,6 +3,7 @@ import './App.css';
 import Homepage from './pages/homepage';
 import Program from './components/Program/Program';
 import {
+  BrowserRouter,
   HashRouter,
   createBrowserRouter,
   createRoutesFromElements,
@@ -15,8 +16,8 @@ function App() {
     <div className="App">
       <HashRouter>
       <Routes>
-        <Route path="/" element={<Homepage />}/> {/* 👈 Renders at /app/ */}
-        <Route path="/:programName" element={<Program />} />
+        <Route path="/" element={<Homepage />} basename= "https://XDXD1100189XD.github.io/brightChamps"/> {/* 👈 Renders at /app/ */}
+        <Route path="/:programName" element={<Program />} basename= "https://XDXD1100189XD.github.io/brightChamps"/>
       </Routes>
         
       </HashRouter>
