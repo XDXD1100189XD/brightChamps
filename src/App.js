@@ -3,7 +3,7 @@ import './App.css';
 import Homepage from './pages/homepage';
 import Program from './components/Program/Program';
 import {
-  BrowserRouter,
+  HashRouter,
   createBrowserRouter,
   createRoutesFromElements,
   Route,
@@ -13,13 +13,13 @@ import {
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
       <Routes>
         <Route path="/brightChamps" element={<Homepage />}/> {/* 👈 Renders at /app/ */}
         <Route path="brightChamps/:programName" element={<Program />} />
       </Routes>
         
-      </BrowserRouter>
+      </HashRouter>
 
     </div>
   );
