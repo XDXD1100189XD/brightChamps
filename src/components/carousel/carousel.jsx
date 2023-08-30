@@ -54,10 +54,12 @@ const Carousel = () => {
                     {slides.map((slide, index) => (
                         <div className="card" key={index}>
                             <div className={"Image"+index} id="Image"></div>
-                            <div className="content">
-                                <h3 className="desc">{slide.description}</h3>
+                            <div className="content2">
+                            <div className="content3">
+                                <h3 className="desc">"{slide.description}"</h3>
                                 <h2 className="pname">{slide.name}</h2>
                                 <h4 className="edu">{slide.class}</h4>
+                            </div>
                             </div>
                             <div className="secImage"></div>
                         </div>

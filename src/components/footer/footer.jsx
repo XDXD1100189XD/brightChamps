@@ -4,6 +4,33 @@ import './footer.css'; // Import the CSS file for styling
 const Footer = () => {
   return (
     <div className="outer3">
+      <div className="bg1">
+        <div className="social-icons">
+          <div className="icon icon1">
+            {/* Icon 1 */}
+
+          </div>
+          <div className="icon icon2">
+
+            {/* Icon 2 */}
+          </div>
+          <div className="icon icon3">
+
+            {/* Icon 3 */}
+          </div>
+          <div className="icon icon4">
+
+            {/* Icon 3 */}
+          </div>
+        </div>
+
+      </div>
+      <div className="bg1">
+        <div className="footer-shadow">
+          {/* Your other footer content */}
+        </div>
+
+      </div>
       <footer className="footer-container">
         {/* Add your content here */}
         <div
@@ -85,7 +112,7 @@ const Footer = () => {
             </tr>
           </tbody>
         </table>
-        <div className="clearfix"></div>
+
 
         {/* HR element */}
         <hr className="hr-divider" />
@@ -112,28 +139,9 @@ const Footer = () => {
         <div className="email-us newC" >
           © Copyright 2022 BrightCHAMPS
         </div>
-        <div className="social-icons">
-          <div className="icon icon1">
-            {/* Icon 1 */}
 
-          </div>
-          <div className="icon icon2">
-
-            {/* Icon 2 */}
-          </div>
-          <div className="icon icon3">
-
-            {/* Icon 3 */}
-          </div>
-          <div className="icon icon4">
-
-            {/* Icon 3 */}
-          </div>
-        </div>
-        <div className="footer-shadow">
-          {/* Your other footer content */}
-        </div>
       </footer>
+
     </div>
   );
 };

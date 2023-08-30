@@ -9,7 +9,7 @@
 
 $bgBlue: #001d38;
 $cardBlue: #0a2640;
-$font: "Poppins";
+$font: "Nunito";
 
 body {
 
@@ -30,7 +30,7 @@ body {
   display: flex;
   grid-gap: 1em;
   overflow: hidden;
-  width: 81vw;
+  width: 1200px;
   margin-right: 120px;
   margin-left: 120px;
 
@@ -81,11 +81,11 @@ body {
     background-image: url("Person5.png");
   }
 
-  &>.content {
+  &>.content2 {
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
-    padding: 1em;
-    text-align: center;
+    
+    text-align: start;
     height: 174px;
 
     &>h1,
@@ -98,7 +98,11 @@ body {
       font-size: 1.25rem;
       line-height: 1;
     }
-
+    &>.content3{
+      width: 100%; 
+      height: 174px;
+      position: relative;
+    }
 
   }
 }
@@ -198,16 +202,31 @@ h4 {
 .map {
   padding-top: 15px;
 }
-
-@media screen and (min-width: 650px) and (max-width: 1250px) {
+.desc{
+  position:absolute;
+top: -5px;
+left: 16px;
+}
+.pname{
+  position:absolute;
+top: 80px;
+left:16px;
+}
+.edu{
+  position:absolute;
+  top: 107px;
+  left:16px;
+}
+@media screen and (min-width: 690px) and (max-width: 1250px) {
   /* Adjust styles for tablet devices */
 
   .wrapper {
-    margin-left: 60px;
+    margin-right: 60px;
+    width: 697px;
   }
 
   .card {
-    width: 337.81px;
+    width: 320.81px;
     height: 465px;
   }
 
@@ -215,52 +234,60 @@ h4 {
     width:337.81px
   }
 
-  .content {
-    position: relative;
+  .content2 {
+    position: absolute;
+    top: 300px;
+    width: 320.4px;
   }
-
+  .content3{
+    width: 320.4px;
+  }
   h3 {
     width: 319.55px;
-    position: absolute;
-    left: 16px;
+    
+    
     top: 0px;
     text-align: start;
 
   }
 
   h2 {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
+    
+    
     font-size: 18.79px;
-    text-align: center;
+    text-align: start;
     margin-block-start: 0em;
     margin-block-end: 0em;
   }
 
   h4 {
-    position: absolute;
-    top: 100px;
-    left: 0px;
+    
+   
     width: 100%;
-    text-align: center;
+    text-align: start;
     margin-block-start: 0em;
     margin-block-end: 0em;
   }
-
+  .pname{
+    top:100px;
+  }
+  .edu{
+    top: 127px;
+  }
   .wrapper{
-    margin-right: 32px;
+    margin-right: 0px;
     margin-left: 32px;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 690px) {
   .card {
     width: 337.81px;
     height: 465px;
   }
-
+  .wrapper{
+    width: 354.81px;
+  }
   #image {
     width:337.81px
   }
@@ -269,15 +296,17 @@ h4 {
   }
   h3 {
     width: 319.55px;
-    position: absolute;
+    
     left: 0px;
-    top: -80px;
+    
     text-align: start;
 
   }
-
+  .desc{
+    top: -23px;
+  }
   h2 {
-    position: absolute;
+    
     top: 10px;
     left: 0px;
     width: 100%;
@@ -288,7 +317,7 @@ h4 {
   }
 
   h4 {
-    position: absolute;
+   
     top: 40px;
     left: 0px;
     width: 100%;
@@ -300,8 +329,8 @@ h4 {
     width: 3em;
   }
   .wrapper{
-    margin-right: 24px;
-    margin-left: 24px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
 }

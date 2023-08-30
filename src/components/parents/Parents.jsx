@@ -7,14 +7,18 @@ const Parents = () => {
 
     return (
         <div className="parents-container">
-            <div classname="outer4">
+            <div className="bg1">
+            <div className="design1"></div>
+            </div>
+            <div className="outer4">
                 <div className="content">Thrilled BrightCHAMPS<span className="highlighted5"> Parents</span> Speak Up.</div>
                 <div className="carousel">
                     <Carousel />
                 </div>
-                <div className="design1"></div>
-                <div className="design2"></div>
+                
+                
             </div>
+            <div className="bg1"><div className="design2"></div></div>
         </div>
     );
 };

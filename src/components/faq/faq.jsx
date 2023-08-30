@@ -23,6 +23,7 @@ const Faq = () => {
   ];
   return (
     <div className="outer">
+      <div className="bg1"><div className="sideImage"> </div></div>
       <div className="faq-container">
         <h1 className="faq-heading">Explore more of <div className="highlighter">BrightCHAMPS</div> universe</h1>
         <div className="accordion">
@@ -35,7 +36,8 @@ const Faq = () => {
             />
           ))}
         </div>
-        <div className="sideImage"> </div>
+
+
       </div>
     </div>
   );

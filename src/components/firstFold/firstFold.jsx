@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './FirstFold.css'; // Import your CSS file
-
+import { Link } from "react-router-dom";
 const FirstFold = () => {
   const [dropdownStates, setDropdownStates] = useState({
     centers: false,
@@ -35,24 +35,68 @@ const FirstFold = () => {
 
       {/* Mobile Navbar */}
       <nav className={`mobile-navbar ${mobileNavOpen ? 'open3' : ''}`}>
-        <ul className="mobile-nav-list">
-          <li className="mobile-nav-item">
-            <a href="#">Our Centers</a>
-          </li>
-          <li className="mobile-nav-item">
-            <a href="#">Our Programs</a>
-          </li>
-          <li className="mobile-nav-item">
-            <a href="#">Who We Are</a>
-          </li>
-          <li className="mobile-nav-item">
-            <a href="#">English</a>
-          </li>
-        </ul>
-        
-      </nav>
+      <ul className="mobile-nav-list">
+        <li className="mobile-nav-item">
+          <a href="#">Our Centers</a>
+        </li>
+        <li className="mobile-nav-item">
+          <a href="#" onClick={() => toggleDropdown('programs')}>
+            Our Programs<span className={`dropdown-icon ${dropdownStates.programs ? 'open' : ''} alt2`}></span>
+          </a>
+          {dropdownStates.programs && (
+            <div className="dropdown-content">
+              <Link to="/RoboCHAMPS" className="custom-link">
+                <div className="items items2">
+                  
+                  <div className="drop-text drop-text2">RoboCHAMPS</div>
+                </div>
+              </Link>
+              <Link to="/FinCHAMPS" className="custom-link">
+                <div className="items items2">
+                  
+                  <div className="drop-text drop-text2">FinCHAMPS</div>
+                </div>
+              </Link>
+              <Link to="/LingoCHAMPS" className="custom-link">
+                <div className="items items2">
+                  
+                  <div className="drop-text drop-text2">LingoCHAMPS</div>
+                </div>
+              </Link>
+              <Link to="/CodeCHAMPS" className="custom-link">
+                <div className="items items2">
+                  
+                  <div className="drop-text drop-text2">CodeCHAMPS</div>
+                </div>
+              </Link>
+            </div>
+          )}
+        </li>
+        <li className="mobile-nav-item">
+          <a href="#">Who We Are</a>
+        </li>
+        <li className="mobile-nav-item">
+          <a href="#">English</a>
+        </li>
+      </ul>
+    </nav>
       <nav className="navbar">
         <ul className="nav-list">
+          <li className="nav-item dropdown">
+            <span className="nav-link" onClick={() => toggleDropdown('programs')}>
+              Our Programs
+              <span className={`dropdown-icon ${dropdownStates.programs ? 'open' : ''}`}></span>
+            </span>
+            {dropdownStates.programs && (
+              <div className="dropdown-content">
+                {/* Content for the centers dropdown */}
+                <Link to="/RoboCHAMPS" className="custom-link"><div className="items"><div className="bd1 bg"></div><div className="drop-text">RoboCHAMPS</div></div></Link>
+                <Link to="/FinCHAMPS" className="custom-link"><div className="items"><div className="bd2 bg"></div><div className="drop-text">FinCHAMPS</div></div></Link>
+                <Link to="/LingoCHAMPS" className="custom-link"><div className="items"><div className="bd3 bg"></div><div className="drop-text">LingoCHAMPS</div></div></Link>
+                <Link to="/CodeCHAMPS" className="custom-link"><div className="items"><div className="bd4 bg"></div><div className="drop-text">CodeCHAMPS</div></div></Link>
+              </div>
+            )}
+          </li>
           <li className="nav-item dropdown">
             <span className="nav-link" onClick={() => toggleDropdown('centers')}>
               Our Centers
@@ -61,20 +105,11 @@ const FirstFold = () => {
             {dropdownStates.centers && (
               <div className="dropdown-content">
                 {/* Content for the centers dropdown */}
+
               </div>
             )}
           </li>
-          <li className="nav-item dropdown">
-            <span className="nav-link" onClick={() => toggleDropdown('programs')}>
-              Our Programs
-              <span className={`dropdown-icon ${dropdownStates.programs ? 'open' : ''}`}></span>
-            </span>
-            {dropdownStates.centers && (
-              <div className="dropdown-content">
-                {/* Content for the centers dropdown */}
-              </div>
-            )}
-          </li>
+
           <li className="nav-item dropdown">
 
             <span className="nav-link" onClick={() => toggleDropdown('whoWeAre')}>

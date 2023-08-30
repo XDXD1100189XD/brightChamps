@@ -1,0 +1,194 @@
+.outer7 {
+    width: 100vw;
+    height: 1000px;
+}
+
+.programs-container {
+    width: 1200px;
+    height: 900px;
+    margin: auto;
+    position: relative;
+    color: #3D4D5D;
+}
+.des2{
+    background-image: url('bear-vector.png');
+    height: 190px;
+}
+.sub-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: 200px;
+    line-height: 24px;
+
+}
+
+.main-video {
+    width: 1200px;
+    height: 500px;
+    position: absolute;
+    margin: auto;
+    top: 290px;
+    margin-left: 12vw;
+}
+
+.vid {
+    width: 800px;
+    height: 500px;
+    border-radius: 32px;
+
+}
+
+.ending {
+    position: absolute;
+    top: 850px;
+    font-size: 14px;
+
+
+}
+
+.e-text {
+    font-weight: 600;
+}
+
+.btn4 {
+    width: 264px;
+    height: 48px;
+    margin-top: 12px;
+    border-radius: 24px;
+    font-weight: 800;
+    color: white;
+    background-color: blue;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 32px;
+    border: none;
+    cursor: pointer;
+}
+.high2{
+    background-size: contain;
+    width: 300px;
+}
+
+@media screen and (min-width: 690px) and (max-width: 1250px) {
+    .outer7 {
+        width: 100vw;
+        height: 1000px;
+    }
+    .des2{
+        display: none;
+    }
+    .programs-container {
+        width: 690px;
+        height: 900px;
+        margin: auto;
+        position: relative;
+        color: #3D4D5D;
+    }
+
+    .sub-text {
+
+        font-size: 16px;
+        position: absolute;
+        top: 150px;
+        line-height: 20px;
+
+    }
+
+    .heading2 {
+        width: 500px;
+    }
+
+    .main-video {
+        width: 690px;
+        height: 400px;
+        position: absolute;
+        
+        top: 220px;
+        margin-left: 0px;
+    }
+    .vid {
+        width: 690px;
+        height: 400px;
+        border-radius: 32px;
+    
+    }
+    .ending {
+        position: absolute;
+        top: 650px;
+        font-size: 14px;
+    
+    
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .outer7 {
+        width: 100vw;
+        height: 1200px;
+    }
+    .des2{
+        display: none;
+    }
+    .heading2{
+        font-size:24px;
+        width: 358px;
+        padding-left:2px;
+    }
+    .programs-container {
+        width: 360px;
+        height: 1000px;
+        margin: auto;
+        position: relative;
+        color: #3D4D5D;
+    }
+
+    .sub-text {
+
+        font-size: 12px;
+        position: absolute;
+        top: 130px;
+        line-height: 20px;
+
+    }
+
+    .heading2 {
+        width: 360px;
+    }
+
+    .main-video {
+        width: 360px;
+        height: 180px;
+        position: absolute;
+        
+        top: 190px;
+        margin-left: 0px;
+    }
+    .vid {
+        width: 360px;
+        height: 180px;
+        border-radius: 32px;
+    
+    }
+    .ending {
+        position: absolute;
+        top: 400px;
+        font-size: 12px;
+    
+    
+    }
+    .btn4 {
+        width: 180px;
+        height: 36px;
+        margin-top: 6px;
+        border-radius: 16px;
+        font-weight: 800;
+        color: white;
+        background-color: blue;
+        font-family: 'Nunito', sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        border: none;
+        cursor: pointer;
+    }
+}

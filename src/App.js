@@ -1,19 +1,26 @@
 
 import './App.css';
-import Footer from './components/footer/footer';
-import LearningPrograms from './components/learningPrograms/learningPrograms';
-import Parents from './components/parents/Parents';
-import Faq from './components/faq/faq';
-import FirstFold from './components/firstFold/firstFold';
+import Homepage from './pages/homepage';
+import Program from './components/Program/Program';
+import {
+  BrowserRouter,
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+  Routes
+} from "react-router-dom";
 function App() {
   return (
     <div className="App">
-    
-     <FirstFold />
-     <LearningPrograms />
-     <Parents />
-     <Faq />
-     <Footer />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />}/> {/* 👈 Renders at /app/ */}
+        <Route path="/:programName" element={<Program />} />
+      </Routes>
+        
+      </BrowserRouter>
+
     </div>
   );
 }

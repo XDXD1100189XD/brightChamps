@@ -11,17 +11,26 @@
   margin:0;
   padding: 0;
   z-index: 1000;
-  
+  width: 100vw;
+  height: 786px;
+  background-color: white;
+  z-index: 1000;
+  border-radius: 60px;
+  color: 
+  #3D4D5D;
+}
+.bg1{
+  width: 100vw;
+  height:0;
+  position: relative;
 }
 .faq-container {
-    width: 99.2vw;
-    background-color: white;
-    z-index: 1000;
+    width: 1200px;
+    
     position: relative;
     height: 786px;
-    border-radius: 60px;
-    color: 
-    #3D4D5D;
+   
+    margin: auto;
     /* Add any other styling you need */
   }
   
@@ -32,8 +41,8 @@
     font-size: 48px;
     line-height: 65.47px;
     padding-top: 32px;
-    width: 1400px;
-    margin-left: 120px;
+    width: 1000px;
+    
     /* Add any other styling you need */
   }
   .highlighter {
@@ -57,7 +66,7 @@
     padding-top: 6px;
     overflow: hidden;
     width: 1200px;
-    margin-left: 120px;
+    
     line-height: 36px;
   }
   
@@ -112,13 +121,14 @@
     background-size: cover;
   }
 
-  @media screen and (min-width: 650px) and (max-width: 1250px) {
+  @media screen and (min-width: 690px) and (max-width: 1250px) {
     /* Adjust styles for tablet devices */
     .outer{
+      height: 700px;
       top:2030px
     }
     .faq-container {
-      
+      width: 690px;
       height: 700px;
       
       
@@ -131,7 +141,7 @@
       line-height: 40px;
       padding-top: 52px;
       width: 450px;
-      margin-left: 64px;
+      
       /* Add any other styling you need */
     }
     .highlighter {
@@ -147,8 +157,8 @@
     
     padding-top: 6px;
     overflow: hidden;
-    width: 85vw;
-    margin-left: 60px;
+    width: 690px;
+    
     line-height: 22px;
   }
   
@@ -163,15 +173,16 @@
   }
   }
   
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 690px) {
     /* Adjust styles for smaller mobile devices */
     .outer{
+      height: 800px;
       top:2290px;
     }
     .faq-container {
       
       height: 800px;
-      
+      width: 360px;
       
       /* Add any other styling you need */
     }
@@ -182,7 +193,7 @@
       line-height: 40px;
       padding-top: 52px;
       width: 280px;
-      margin-left: 24px;
+      
       /* Add any other styling you need */
     }
     .highlighter {
@@ -198,13 +209,13 @@
     
     padding-top: 6px;
     overflow: hidden;
-    width: 85vw;
-    margin-left: 24px;
+    width: 360px;
+    
     line-height: 22px;
   }
   
   .accordion-question {
-    width: 67vw;
+    
     font-size: 16px;
   }
   .accordion-answer {
@@ -215,7 +226,7 @@
   .arrow{
     height: 6px;
     width: 6px;
-    margin-right: -40px;
+    
   }
   .sideImage{
     top: 48px;
