@@ -15,8 +15,8 @@ function App() {
     <div className="App">
       <HashRouter>
       <Routes>
-        <Route path="/brightChamps" element={<Homepage />}/> {/* 👈 Renders at /app/ */}
-        <Route path="brightChamps/:programName" element={<Program />} />
+        <Route path="/" element={<Homepage />}/> {/* 👈 Renders at /app/ */}
+        <Route path="/:programName" element={<Program />} />
       </Routes>
         
       </HashRouter>
