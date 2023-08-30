@@ -15,8 +15,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Homepage />}/> {/* 👈 Renders at /app/ */}
-        <Route path="/:programName" element={<Program />} />
+        <Route path="/brightChamps" element={<Homepage />}/> {/* 👈 Renders at /app/ */}
+        <Route path="brightChamps/:programName" element={<Program />} />
       </Routes>
         
       </BrowserRouter>
