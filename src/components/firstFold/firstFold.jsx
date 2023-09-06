@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './FirstFold.css'; // Import your CSS file
 import { Link } from "react-router-dom";
 const FirstFold = () => {
@@ -8,6 +8,74 @@ const FirstFold = () => {
     whoWeAre: false,
     english: false,
   });
+  const dropdownRefs = {
+    centers: useRef(null),
+    programs: useRef(null),
+    whoWeAre: useRef(null),
+    english: useRef(null),
+  };
+  useEffect(() => {
+    function handleClickOutside(event) {
+      Object.keys(dropdownRefs).forEach((dropdownName) => {
+        if (
+          dropdownRefs[dropdownName].current &&
+          !dropdownRefs[dropdownName].current.contains(event.target)
+        ) {
+          setDropdownStates((prevState) => ({
+            ...prevState,
+            [dropdownName]: false,
+          }));
+        }
+      });
+    }
+
+    // Add an event listener for the "mousedown" event
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Clean up: Remove the event listener when the component unmounts
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownRefs]);
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY >= 860 && window.innerWidth >= 1250) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    }
+
+    // Add an event listener for the "scroll" event
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up: Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const navbarStyle = isFixed
+    ? {
+        position: "fixed",
+        top: "-310px",
+        left: 0,
+        right: 0,
+        zIndex: 1000,
+        padding: 0,
+        paddingTop: "10px",
+        paddingLeft:"360px",
+        background: "linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.25), transparent) rgb(94, 63, 224)", 
+        borderRadius: "300px",
+        height: "400px",
+        display: "flex", // Use flexbox to align items
+      justifyContent: "flex-end", // Align items to the right
+        transition: "opacity 0.3s ease-in-out"// Add your desired background color
+      }
+    : {};
+    
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const toggleDropdown = (dropdownName) => {
     setDropdownStates((prevState) => ({
@@ -80,9 +148,11 @@ const FirstFold = () => {
         </li>
       </ul>
     </nav>
-      <nav className="navbar">
-        <ul className="nav-list">
-          <li className="nav-item dropdown">
+      <nav className={`navbar ${isFixed ? "animate__animated animate__fadeInDown animate__faster" : ""}`} style={navbarStyle}> 
+      {isFixed && <div className="harvard2"></div>}
+        <ul className={`nav-list ${isFixed ? "navStyle" : ""}`}>
+        
+          <li className={`nav-item dropdown ${isFixed ? "navDrop" : ""}`} ref={dropdownRefs.programs}>
             <span className="nav-link" onClick={() => toggleDropdown('programs')}>
               Our Programs
               <span className={`dropdown-icon ${dropdownStates.programs ? 'open' : ''}`}></span>
@@ -97,7 +167,7 @@ const FirstFold = () => {
               </div>
             )}
           </li>
-          <li className="nav-item dropdown">
+          <li className={`nav-item dropdown ${isFixed ? "navDrop" : ""}`}>
             <span className="nav-link" onClick={() => toggleDropdown('centers')}>
               Our Centers
               <span className={`dropdown-icon ${dropdownStates.centers ? 'open' : ''}`}></span>
@@ -110,7 +180,7 @@ const FirstFold = () => {
             )}
           </li>
 
-          <li className="nav-item dropdown">
+          <li className={`nav-item dropdown ${isFixed ? "navDrop" : ""}`}>
 
             <span className="nav-link" onClick={() => toggleDropdown('whoWeAre')}>
               Who We are?
@@ -122,7 +192,7 @@ const FirstFold = () => {
               </div>
             )}
           </li>
-          <li className="nav-item dropdown">
+          <li className={`nav-item dropdown ${isFixed ? "navDrop" : ""}`}>
 
             <span className="nav-link" onClick={() => toggleDropdown('english')}>
               English

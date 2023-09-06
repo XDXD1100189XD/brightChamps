@@ -6,7 +6,15 @@
     width: 100vw;
     background-color: #4E3BC2;
   }
-
+  .navStyle{
+    padding-top:320px !important;
+    margin-right: 124px !important;
+  }
+  .navDrop{
+    padding-right: 12px !important;
+    
+    width: 150px !important;
+  }
   .mobile-nav-icon {
     position: absolute;
     top: 10px;
@@ -135,39 +143,49 @@
     width: 200px;
   }
   .items{
-    display: flex;
-    align-items: center; /* Vertically center items */
-    justify-content: center;
+    
     width: 100%;
     border-radius: 5px;
     text-align: start;
     z-index: 200;
     cursor:pointer;
-    padding: 10px;
-    border-bottom: 0.5px solid black;
-    width: 180px;
+   position: relative;
+   border-bottom: 1.5px solid rgba(0,0,0,.1);
+   width: 196px;
     text-decoration: none;
-    
+    height: 62px;
   }
+ 
   .custom-link {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Maintain the default text color */
+    position:relative;
+    height: 62px;
   }
   .items:hover{
-    background-color: lightgrey;
+    background-color: #e4e6eb;
+    height: 58px;
   }
   .bg{
-    margin-top: 5px;
+    
     display: inline-block;
     height: 32px;
     width: 32px;
+    position: absolute;
+    top:16px;
+    left: 25px;
     
-    padding-right: 8px;
   }
   .drop-text{
-    display: inline-block;
     
-  }
+    display: inline-block;
+    position: absolute;
+    top:22px;
+    left: 64px;
+
+    
+}
+ 
   .bd1{
     background-image:url('robot1.png');
     background-repeat: no-repeat;
@@ -320,6 +338,16 @@
     width:146px;
     height:75.84px;
     top:775px;
+    left:120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(harvard.png);
+  }
+  .harvard2{
+    position: absolute;
+    width:146px;
+    height:75.84px;
+    top:320px;
     left:120px;
     background-repeat: no-repeat;
     background-size: contain;
